@@ -1,0 +1,12 @@
+[build]
+  base = "backend"
+  command = "pip install -r requirements.txt -t ."
+  publish = "../"
+
+[functions]
+  directory = "."
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/handler/:splat"
+  status = 200
