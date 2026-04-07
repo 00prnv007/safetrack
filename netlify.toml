@@ -1,7 +1,7 @@
 [build]
-  base = "backend"
-  command = "pip install -r requirements.txt -t ."
-  publish = "../"
+  base = "."
+  command = "cd backend && pip install -r requirements.txt -t ."
+  publish = "."
 
 [functions]
   directory = "."
